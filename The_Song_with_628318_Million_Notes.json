@@ -14,28 +14,35 @@
 	{
 		"type":1,
         "time":0,
-        "length":5,
+        "length":388.4,
         "position":[0,0,0],
         "rotation":[0,0,0],
         "size":[1,1,1],
         "transparency":0,
         "material":1,
         "appearance":0,
-        "color":0,
+        "color":[89, 89, 255],
         "animation":[
         {
             "time":0,
             "position":[0,0,0],
             "rotation":[0,0,0],
             "size":[1,1,1],
-            "transparency":0.5
+            "transparency":0.25
         },
+		{
+			"time":0.0162821833,
+			"position":[0,-2,0],
+			"rotation":[0,0,0],
+			"size":[1,1,1],
+            "transparency":0.25
+		},
 		{
             "time":1,
             "position":[0,0,0],
             "rotation":[0,0,0],
             "size":[0,0,0],
-            "transparency":1
+            "transparency":0.25
         }
         ]
 	},
