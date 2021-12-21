@@ -291,7 +291,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [0, -2],
 		"time": 6.324,
@@ -300,7 +300,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [2, -2],
 		"time": 6.364,
@@ -309,7 +309,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [2, 0],
 		"time": 6.405,
@@ -318,7 +318,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [2, 2],
 		"time": 6.445,
@@ -327,7 +327,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [0, 2],
 		"time": 6.485,
@@ -417,7 +417,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [0, 2],
 		"time": 10.337,
@@ -426,7 +426,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [-2, 2],
 		"time": 10.377,
@@ -435,7 +435,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [-2, 0],
 		"time": 10.418,
@@ -444,7 +444,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [-2, -2],
 		"time": 10.458,
@@ -453,7 +453,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [0, -2],
 		"time": 10.498,
@@ -543,7 +543,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [-2, 0],
 		"time": 14.391,
@@ -552,7 +552,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [-2, -2],
 		"time": 14.431,
@@ -561,7 +561,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [0, -2],
 		"time": 14.472,
@@ -570,7 +570,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [2, -2],
 		"time": 14.512,
@@ -579,7 +579,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": true,
+		"fog": false,
 		"length": 1,
 		"position": [2, 0],
 		"time": 14.552,
