@@ -20,7 +20,7 @@
         "size":[0.525,0.525,0.05],
         "transparency":0,
         "material":1,
-        "appearance":0,
+        "appearance":1,
         "color":[89, 89, 255],
         "animation":[
         {
