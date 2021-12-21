@@ -33,7 +33,7 @@
         "rotation":[0,0,0], // starting rotation
         "size":[0,0,0], // size of object
         "transparency":0,
-    "material":0, // 0: SmoothPlastic, 1: Neon
+        "material":0, // 0: SmoothPlastic, 1: Neon
         "appearance":0, // 0: default part, 1: hitobject appearance
         "color":0, // color3 value OR object color
         "animation":[ // object animation
