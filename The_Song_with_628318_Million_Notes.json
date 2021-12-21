@@ -4,15 +4,9 @@
 		[255, 0, 0],
 		[0, 255, 255]
 	],
-	"events": [{
-		"type": 0,
-		"time": 0,
-		"color": [255, 89, 89]
-	}],
+	"events": [],
 	"noteDistance": 35,
-	"objects": [
-	{
-		"type":1,
+	"objects": [{"type":1,
         "time":0,
         "length":388.4,
         "position":[0,0,1],
@@ -206,8 +200,7 @@
             "transparency":1
         }
         ]
-	},
-	{
+	}, {
 		"animation": [],
 		"color": 0,
 		"fog": true,
@@ -291,7 +284,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [0, -2],
 		"time": 6.324,
@@ -300,7 +293,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [2, -2],
 		"time": 6.364,
@@ -309,7 +302,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [2, 0],
 		"time": 6.405,
@@ -318,7 +311,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [2, 2],
 		"time": 6.445,
@@ -327,7 +320,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [0, 2],
 		"time": 6.485,
@@ -417,7 +410,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [0, 2],
 		"time": 10.337,
@@ -426,7 +419,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [-2, 2],
 		"time": 10.377,
@@ -435,7 +428,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [-2, 0],
 		"time": 10.418,
@@ -444,7 +437,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [-2, -2],
 		"time": 10.458,
@@ -453,7 +446,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [0, -2],
 		"time": 10.498,
@@ -543,7 +536,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [-2, 0],
 		"time": 14.391,
@@ -552,7 +545,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [-2, -2],
 		"time": 14.431,
@@ -561,7 +554,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [0, -2],
 		"time": 14.472,
@@ -570,7 +563,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [2, -2],
 		"time": 14.512,
@@ -579,7 +572,7 @@
 	}, {
 		"animation": [],
 		"color": 0,
-		"fog": false,
+		"fog": true,
 		"length": 1,
 		"position": [2, 0],
 		"time": 14.552,
