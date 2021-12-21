@@ -15,9 +15,9 @@
 		"type":1,
         "time":0,
         "length":388.4,
-        "position":[0,0,0],
+        "position":[0,0,1],
         "rotation":[0,0,0],
-        "size":[0.5,0.5,0.05],
+        "size":[0.525,0.525,0.05],
         "transparency":0,
         "material":1,
         "appearance":0,
@@ -25,35 +25,70 @@
         "animation":[
         {
             "time":0,
-            "position":[0,0,0],
+            "position":[0,0,1],
             "rotation":[0,0,0],
-            "size":[0.5,0.5,0.05],
+            "size":[0.525,0.525,0.05],
             "transparency":0.25
         },
 		{
 			"time":0.00907826982,
-			"position":[0,0,0],
+			"position":[0,0,1],
             "rotation":[0,0,0],
-            "size":[0.5,0.5,0.05],
+            "size":[0.525,0.525,0.05],
             "transparency":0.25
 		},
 		{
 			"time":0.0142971164,
-			"position":[0,0,0],
+			"position":[0,0,1],
             "rotation":[0,0,0],
-            "size":[0.5,0.5,0.05],
+            "size":[0.525,0.525,0.05],
             "transparency":0.25
 		},
 		{
 			"time":0.0162821833,
 			"position":[0,-2,1],
 			"rotation":[0,0,0],
-			"size":[0.5,0.5,0.05],
+			"size":[0.525,0.525,0.05],
+            "transparency":0.25
+		},
+		{
+			"time":0.0163851699,
+			"position":[2,-2,1],
+			"rotation":[0,0,0],
+			"size":[0.525,0.525,0.05],
+            "transparency":0.25
+		},
+		{
+			"time":0.0164907312,
+			"position":[2,0,1],
+			"rotation":[0,0,0],
+			"size":[0.525,0.525,0.05],
+            "transparency":0.25
+		},
+		{
+			"time":0.0165937178,
+			"position":[2,2,1],
+			"rotation":[0,0,0],
+			"size":[0.525,0.525,0.05],
+            "transparency":0.25
+		},
+		{
+			"time":0.0166967044,
+			"position":[0,2,1],
+			"rotation":[0,0,0],
+			"size":[0.525,0.525,0.05],
+            "transparency":0.25
+		},
+		{
+			"time":0.0194129763,
+			"position":[0,0,1],
+			"rotation":[0,0,0],
+			"size":[0.525,0.525,0.05],
             "transparency":0.25
 		},
 		{
             "time":1,
-            "position":[0,0,0],
+            "position":[0,0,1],
             "rotation":[0,0,0],
             "size":[0,0,0],
             "transparency":0.25
