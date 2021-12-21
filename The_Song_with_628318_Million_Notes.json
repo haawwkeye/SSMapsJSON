@@ -1,18 +1,1 @@
-{"audio": "rbxassetid://6810792837", "colors": [[255, 0, 0], [0, 255, 255]], "events": [], "noteDistance": 35, "objects": [{"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 3.526, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 3.728, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.038, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.297, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.54, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.782, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.99, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 5.19, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 5.45, "transparency": 0, "type": 0}]}"color": 0,
-		"fog": true,
-		"length": 1,
-		"position": [0, 0],
-		"time": 5.19,
-		"transparency": 0,
-		"type": 0
-	}, {
-		"animation": [],
-		"color": 0,
-		"fog": true,
-		"length": 1,
-		"position": [0, 0],
-		"time": 5.45,
-		"transparency": 0,
-		"type": 0
-	}]
-}
+{"audio": "rbxassetid://6810792837", "colors": [[255, 0, 0], [0, 255, 255]], "events": [], "noteDistance": 35, "objects": [{"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 3.526, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 3.728, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.038, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.297, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.54, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.782, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 4.99, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 5.19, "transparency": 0, "type": 0}, {"animation": [], "color": 0, "fog": true, "length": 1, "position": [0, 0], "time": 5.45, "transparency": 0, "type": 0}]}
