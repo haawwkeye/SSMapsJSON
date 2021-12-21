@@ -10,7 +10,36 @@
 		"color": [255, 89, 89]
 	}],
 	"noteDistance": 35,
-	"objects": [{
+	"objects": [
+	{
+		"type":1,
+        "time":0,
+        "length":5,
+        "position":[0,0,0],
+        "rotation":[0,0,0],
+        "size":[1,1,1],
+        "transparency":0,
+        "material":1,
+        "appearance":0,
+        "color":0,
+        "animation":[
+        {
+            "time":0,
+            "position":[0,0,0],
+            "rotation":[0,0,0],
+            "size":[1,1,1],
+            "transparency":0.5
+        },
+		{
+            "time":1,
+            "position":[0,0,0],
+            "rotation":[0,0,0],
+            "size":[0,0,0],
+            "transparency":1
+        }
+        ]
+	},
+	{
 		"animation": [],
 		"color": 0,
 		"fog": true,
