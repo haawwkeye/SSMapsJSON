@@ -145,14 +145,14 @@
 		{
             "time":0.047,
             "position":[0,0,1],
-            "rotation":[0,0,748.4],
+            "rotation":[0,0,720],
             "size":[0.525,0.525,0.05],
             "transparency":1
         },
 		{
             "time":0.9999,
             "position":[0,0,1],
-            "rotation":[0,0,748.4],
+            "rotation":[0,0,720],
             "size":[0.525,0.525,0.05],
             "transparency":1
         },
