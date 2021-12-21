@@ -87,6 +87,48 @@
             "transparency":0.25
 		},
 		{
+            "time":0.0266143151,
+            "position":[0,2,1],
+            "rotation":[0,0,0],
+            "size":[0,0,0],
+            "transparency":0.25
+        },
+		{
+            "time":0.0267173018,
+            "position":[-2,2,1],
+            "rotation":[0,0,0],
+            "size":[0,0,0],
+            "transparency":0.25
+        },
+		{
+            "time":0.026822863,
+            "position":[-2,0,1],
+            "rotation":[0,0,0],
+            "size":[0,0,0],
+            "transparency":0.25
+        },
+		{
+            "time":0.0269258496,
+            "position":[-2,-2,1],
+            "rotation":[0,0,0],
+            "size":[0,0,0],
+            "transparency":0.25
+        },
+		{
+            "time":0.0270288363,
+            "position":[0,-2,1],
+            "rotation":[0,0,0],
+            "size":[0,0,0],
+            "transparency":0.25
+        },
+		{
+            "time":0.0296678682,
+            "position":[0,0,1],
+            "rotation":[0,0,0],
+            "size":[0,0,0],
+            "transparency":0.25
+        },
+		{
             "time":1,
             "position":[0,0,1],
             "rotation":[0,0,0],
