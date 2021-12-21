@@ -144,8 +144,8 @@
         },
 		{
             "time":0.0370520082,
-            "position":[0,0,1],
-            "rotation":[-2,0,0],
+            "position":[-2,0,1],
+            "rotation":[0,0,0],
             "size":[0.525,0.525,0.05],
             "transparency":0.25
         },
