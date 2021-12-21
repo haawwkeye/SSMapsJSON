@@ -136,14 +136,14 @@
             "transparency":0.25
         },
 		{
-            "time":0.39,
+            "time":0.031,
             "position":[0,0,1],
             "rotation":[0,0,0],
             "size":[0.525,0.525,0.05],
             "transparency":0.25
         },
 		{
-            "time":0.4,
+            "time":0.032,
             "position":[0,0,1],
             "rotation":[0,0,360],
             "size":[0.525,0.525,0.05],
