@@ -33,7 +33,7 @@ if canUse then
     local data = readall("input.json")
 
     if length <= 0 then
-        print("Please set length at the top of the script...")
+        print("Please set length in length.lua")
         return;
     elseif data == "" or data == nil then
         print("Please put a json map in input.json")
@@ -41,6 +41,11 @@ if canUse then
     end
 
     local tbl = JSON.decode(data);
+
+    if tbl == nil then
+        print("Please input a vaild json file into input.json")
+        return;
+    end
 
     local new = JSON.decode([[{
         "type":1,

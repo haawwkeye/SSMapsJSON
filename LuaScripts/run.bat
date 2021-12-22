@@ -13,7 +13,9 @@ TITLE Console
     IF ERRORLEVEL 1 GOTO RunFakeCursor
 
 :RunFakeCursor
+    ECHO.
     ECHO BEFORE RUNNING PLEASE MAKE SURE YOU PUT YOUR MAP IN 'input.json' AND SONG LENGTH IN 'length.lua'
+    ECHO.
     ECHO 1. Yes
     ECHO 2. No
     ECHO.
@@ -22,12 +24,14 @@ TITLE Console
     IF ERRORLEVEL 1 GOTO ComfirmFakeCursor
 
 :ComfirmFakeCursor
-    ECHO Running lua
+    ECHO.
     .\lua\lua53.exe ./FakeCursor.lua
+    ECHO.
     pause
     GOTO CloseAllWindows
 
 :CloseAllWindows
+    ECHO.
     ECHO Exiting...
     timeout /T 2
     ::GOTO CLSback
