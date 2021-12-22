@@ -854,9 +854,9 @@
 			"position": [2, 0, 1]
 		}],
 		"type": 1,
-		"transparency": 0,
+		"transparency": 1,
 		"appearance": 1,
-		"rotation": [0, 0, 0],
+		"rotation": [0, 0, 540],
 		"color": [89, 89, 255],
 		"time": 0,
 		"position": [0, 0, 1],
