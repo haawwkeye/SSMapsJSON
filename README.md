@@ -56,3 +56,6 @@
     ]
 }
 ```
+
+# LUA Code
+Add fake cursor to map data
