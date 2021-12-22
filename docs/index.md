@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/haawwkeye/SSMapsJSON/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# JSON Format
+```json
+{
+    "audio":"rbxassetid://1467404779", // audio id
+    "noteDistance":70,
+    "colors":[
+        [255,0,0],
+        [0,255,255]
+    ],
+    "objects":[ // hitobjects/envobjects
+    {
+        "type":0, // 0: regular hitobject
+        "time":0, // time of hit in seconds
+        "length":0, // length in seconds
+        "position":[0,0], // starting position, also determines hitbox
+        "transparency":0,
+        "color":0, // color3 value OR object color
+        "fog":true, // automatic fog effect
+        "animation":[ // object animation
+        {
+            "time":0, // 0-1 overrides start position
+            "position":[0,0,0], // overrides approach rate
+            "rotation":[0,0,0], // only in animated hitobjects
+            "transparency":0
+        }
+        ]
+    },
+    {
+        "type":1, // 1: regular envobject, doesn't follow track, should always be animated
+        "time":0, // time of appearance in seconds
+        "length":0, // length in seconds
+        "position":[0,0,0], // starting position
+        "rotation":[0,0,0], // starting rotation
+        "size":[0,0,0], // size of object
+        "transparency":0,
+        "material":0, // 0: SmoothPlastic, 1: Neon
+        "appearance":0, // 0: default part, 1: hitobject appearance
+        "color":0, // color3 value OR object color
+        "animation":[ // object animation
+        {
+            "time":0, // 0-1 overrides start position
+            "position":[0,0,0],
+            "rotation":[0,0,0],
+            "size":[0,0,0],
+            "transparency":0
+        }
+        ]
+    }
+    ],
+    "events":[ // lighting events
+    {
+        "type":0, // 0: fog
+        "time":0,
+        "color":[0,0,0] // color3 value OR object color
+    }
+    ]
+}
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/haawwkeye/SSMapsJSON/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# LUA Code
+Add fake cursor to map data
