@@ -1,5 +1,4 @@
-local length = 0;
-
+local length = require("length");
 local JSON = require("json");
 
 -- Return true if file exists and is readable.
@@ -94,5 +93,5 @@ if canUse then
     write("output.json", newData);
     print("Coverted!")
 else
-    print("Unable to convert...")
+    print("Files missing")
 end
