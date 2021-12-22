@@ -25,25 +25,25 @@ function write(filename, contents)
     fh:close()
 end
 
-local canUse = file_exists("input.json") and file_exists("output.json");
+local canUse = file_exists("input.txt") and file_exists("output.txt");
 
 -- print("JSON Loaded: ".. (JSON ~= nil) .."\nCan Convert: ".. (canUse))
 
 if canUse then
-    local data = readall("input.json")
+    local data = readall("input.txt")
 
     if length <= 0 then
         print("Please set length in length.lua")
         return;
     elseif data == "" or data == nil then
-        print("Please put a json map in input.json")
+        print("Please put a json map in input.txt")
         return;
     end
 
     local tbl = JSON.decode(data);
 
     if tbl == nil then
-        print("Please input a vaild json file into input.json")
+        print("Please input a vaild json file into input.txt")
         return;
     end
 
@@ -95,8 +95,8 @@ if canUse then
 
     local newData = JSON.encode(tbl);
 
-    write("output.json", newData);
-    print("Coverted!")
+    write("output.txt", newData);
+    print("Added Data!")
 else
-    print("Files missing")
+    print("File(s) missing")
 end
