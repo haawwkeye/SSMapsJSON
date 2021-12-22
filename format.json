@@ -6,50 +6,66 @@
         [0,255,255]
     ],
     "objects":[
-    {
-        "type":0,
-        "time":0,
-        "length":0,
-        "position":[0,0],
-        "transparency":0,
-        "color":0,
-        "fog":true,
-        "animation":[
         {
+            "type":0,
             "time":0,
-            "position":[0,0,0],
-            "rotation":[0,0,0],
-            "transparency":0
-        }
-        ]
-    },
-    {
-        "type":1,
-        "time":0,
-        "length":0,
-        "position":[0,0,0],
-        "rotation":[0,0,0],
-        "size":[0,0,0],
-        "transparency":0,
-        "material":0,
-        "appearance":0,
-        "color":0,
-        "animation":[
+            "length":0,
+            "position":[0,0],
+            "transparency":0,
+            "color":0,
+            "fog":true,
+            "animation":[
+                {
+                    "time":0,
+                    "position":[0,0,0],
+                    "rotation":[0,0,0],
+                    "transparency":0
+                }
+            ],
+            "track":"trackName"
+        },
         {
+            "type":1,
             "time":0,
+            "length":0,
             "position":[0,0,0],
             "rotation":[0,0,0],
             "size":[0,0,0],
-            "transparency":0
+            "transparency":0,
+            "material":0,
+            "appearance":0,
+            "color":0,
+            "animation":[
+                {
+                    "time":0,
+                    "position":[0,0,0],
+                    "rotation":[0,0,0],
+                    "size":[0,0,0],
+                    "transparency":0
+                }
+            ],
+            "track":"trackName"
         }
-        ]
-    }
+    ],
+    "tracks":[
+        {
+            "name":"trackName",
+            "position":[0,0,0],
+            "rotation":[0,0,0],
+            "animation":[
+                {
+                    "time":0,
+                    "position":[0,0,0],
+                    "rotation":[0,0,0]
+                }
+            ]
+        }
     ],
     "events":[
-    {
-        "type":0,
-        "time":0,
-        "color":[0,0,0]
-    }
+        {
+            "type":0,
+            "time":0,
+            "color":[0,0,0]
+        }
     ]
 }
