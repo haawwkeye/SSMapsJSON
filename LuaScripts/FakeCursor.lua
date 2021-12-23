@@ -75,8 +75,10 @@ if canUse then
 
     new.length = length;
 
-    for index, notes in pairs(tbl["objects"]) do
-        local t = (notes.time/new.length);
+    for i, notes in pairs(tbl["objects"]) do
+        local ct = (notes.time/new.length);
+        local nt = (tbl["objects"][i] ~= nil and tbl["objects"][i].time/new.length or 0);
+        local td = (nt-ct)
 
         local current = JSON.decode([[{
             "time":0,
@@ -94,10 +96,10 @@ if canUse then
             "transparency":0.25
             }]]);
 
-        current.time = t;
+        current.time = ct;
         current.position[1] = notes.position[1];
         current.position[2] = notes.position[2];
-        next.time = t+0.0001;
+        next.time = ct+(td/2); -- current + timediff/2
         next.position[1] = notes.position[1];
         next.position[2] = notes.position[2];
         
