@@ -53,7 +53,7 @@ if canUse then
         "length":0,
         "position":[0,0,1],
         "rotation":[0,0,0],
-        "size":[0.2625,0.2625,0.2625],
+        "size":[0.525,0.525,0.525],
         "transparency":0.25,
         "material":1,
         "appearance":1,
@@ -92,14 +92,14 @@ if canUse then
             "time":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
-            "size":[0.2625,0.2625,0.2625],
+            "size":[0.775,0.775,0.775],
             "transparency":0.25
             }]]);
 
         current.time = ct;
         current.position[1] = notes.position[1];
         current.position[2] = notes.position[2];
-        next.time = ct+(td/2); -- current + timediff/2
+        next.time = ct+(td/2)/2; -- current + (timediff/2)/2
         next.position[1] = notes.position[1];
         next.position[2] = notes.position[2];
         
