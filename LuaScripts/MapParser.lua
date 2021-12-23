@@ -323,7 +323,7 @@ function getBeatFormat()
     return json.decode([[{
         "type":0,
         "time":0,
-        "length":0,
+        "length":1,
         "position":[0,0],
         "transparency":0,
         "color":0,
