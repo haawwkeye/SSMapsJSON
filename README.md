@@ -75,4 +75,4 @@
 
 # LUA Code
 Add fake cursor to map data
-Covert map to JSON
+Convert map to JSON
