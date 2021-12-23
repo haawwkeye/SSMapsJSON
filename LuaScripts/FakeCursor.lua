@@ -54,7 +54,32 @@ if canUse then
         return;
     end
 
-    local obj
+    local obj = JSON.decode([[{
+        "type":1,
+        "time":0,
+        "length":0,
+        "position":[0,0,1],
+        "rotation":[0,0,0],
+        "size":[0.675,0.675,0.775],
+        "transparency":0.25,
+        "material":1,
+        "appearance":1,
+        "color":[89, 89, 255],
+        "animation":[{
+            "time":0,
+            "position":[0,0,1],
+            "rotation":[0,0,0],
+            "size":[0.675,0.675,0.775],
+            "transparency":0.25
+        }, {
+            "time":1,
+            "position":[0,0,1],
+            "rotation":[0,0,540],
+            "size":[0,0,0],
+            "transparency":1
+        }]
+    }]])
+
     local new = JSON.decode([[{
         "type":1,
         "time":0,
@@ -81,9 +106,8 @@ if canUse then
         }]
     }]])
 
+    obj.length = length;
     new.length = length;
-
-    obj = new;
 
     for i, notes in pairs(tbl["objects"]) do
         local ct = (notes.time/new.length);
@@ -124,7 +148,7 @@ if canUse then
                 "time":0,
                 "position":[0,0,1],
                 "rotation":[0,0,0],
-                "size":[0.425,0.425,0.425],
+                "size":[0.425,0.425,0.525],
                 "transparency":0.5
                 }]]);
             
@@ -132,7 +156,7 @@ if canUse then
                 "time":0,
                 "position":[0,0,1],
                 "rotation":[0,0,0],
-                "size":[0.675,0.675,0.675],
+                "size":[0.675,0.675,0.775],
                 "transparency":0.5
                 }]]);
     
