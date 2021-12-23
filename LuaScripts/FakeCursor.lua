@@ -53,7 +53,7 @@ if canUse then
         "length":0,
         "position":[0,0,1],
         "rotation":[0,0,0],
-        "size":[0.625,0.625,0.625],
+        "size":[0.545,0.545,0.545],
         "transparency":0.25,
         "material":1,
         "appearance":1,
@@ -90,7 +90,7 @@ if canUse then
             "time":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
-            "size":[0.625,0.625,0.625],
+            "size":[0.545,0.545,0.545],
             "transparency":0.25
             }]]);
 
