@@ -50,10 +50,10 @@ if canUse then
     local new = JSON.decode([[{
         "type":1,
         "time":0,
-        "length":388.4,
+        "length":0,
         "position":[0,0,1],
         "rotation":[0,0,0],
-        "size":[0.525,0.525,0.525],
+        "size":[0.625,0.625,0.625],
         "transparency":0.25,
         "material":1,
         "appearance":1,
@@ -62,33 +62,45 @@ if canUse then
             "time":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
-            "size":[0.525,0.525,0.05],
+            "size":[0.525,0.525,0.525],
             "transparency":0.25
         }, {
             "time":1,
             "position":[0,0,1],
             "rotation":[0,0,540],
-            "size":[0.525,0.525,0.05],
+            "size":[0.525,0.525,0.525],
             "transparency":1
         }]
     }]])
 
     new.length = length;
 
-    for _, notes in pairs(tbl["objects"]) do
+    for index, notes in pairs(tbl["objects"]) do
         local current = JSON.decode([[{
             "time":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
-            "size":[0.525,0.525,0.05],
+            "size":[0.525,0.525,0.525],
             "transparency":0.25
             }]]);
         
+        local next = JSON.decode([[{
+            "time":0,
+            "position":[0,0,1],
+            "rotation":[0,0,0],
+            "size":[0.625,0.625,0.625],
+            "transparency":0.25
+            }]]);
+
         current.time = notes.time/new.length;
         current.position[1] = notes.position[1];
         current.position[2] = notes.position[2];
+        next.time = notes.time+0.0001/new.length;
+        next.position[1] = notes.position[1];
+        next.position[2] = notes.position[2];
         
         table.insert(new.animation, current);
+        table.insert(new.animation, next);
     end
 
     table.insert(tbl.objects, new)

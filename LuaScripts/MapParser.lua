@@ -336,7 +336,7 @@ end
 function module:CovertToJson(txt)
     local map = build.ss(txt);
     local newJson = json.decode(formatJSON);
-    local beats = {}
+    --local beats = {}
 
     for _, beat in pairs(map.beats) do
         local beatFormat = getBeatFormat();
@@ -347,11 +347,10 @@ function module:CovertToJson(txt)
         beatFormat.time = time;
         beatFormat.position = pos
 
-        table.insert(beats, beatFormat)        
+        table.insert(newJson.objects, beatFormat)        
     end
 
     newJson.audio = newJson.audio .. tostring(map.audio);
-    table.insert(newJson.objects, beats)
 
     return json.encode(newJson);
 end

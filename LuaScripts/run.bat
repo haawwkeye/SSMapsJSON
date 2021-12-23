@@ -8,7 +8,7 @@ TITLE Console
     ECHO 2. Run ConvertMap.lua with input.txt
     ECHO 3. Close run.bat
     ECHO.
-    CHOICE /C 12 /N /M "Enter your choice: "
+    CHOICE /C 123 /N /M "Enter your choice: "
     :: Note - list ERRORLEVELS in decreasing order
     IF ERRORLEVEL 3 GOTO CloseAllWindows
     IF ERRORLEVEL 2 GOTO RunConvertMap
@@ -30,7 +30,7 @@ TITLE Console
     .\lua\lua53.exe ./ConvertMap.lua
     ECHO.
     pause
-    GOTO CloseAllWindows
+    GOTO back
 
 :RunFakeCursor
     ECHO.
@@ -48,7 +48,7 @@ TITLE Console
     .\lua\lua53.exe ./FakeCursor.lua
     ECHO.
     pause
-    GOTO CloseAllWindows
+    GOTO back
 
 :CloseAllWindows
     ECHO.
