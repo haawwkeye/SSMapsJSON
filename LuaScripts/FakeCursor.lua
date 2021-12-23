@@ -1,5 +1,12 @@
 local length = require("length");
 local JSON = require("json");
+local settings = require("settings");
+
+if settings ~= nil then
+    if settings["FakeCursor"] then
+        settings = settings["FakeCursor"]
+    end
+end
 
 -- Return true if file exists and is readable.
 function file_exists(path)
@@ -47,6 +54,7 @@ if canUse then
         return;
     end
 
+    local obj
     local new = JSON.decode([[{
         "type":1,
         "time":0,
@@ -68,19 +76,21 @@ if canUse then
             "time":1,
             "position":[0,0,1],
             "rotation":[0,0,540],
-            "size":[0.525,0.525,0.525],
+            "size":[0,0,0],
             "transparency":1
         }]
     }]])
 
     new.length = length;
 
+    obj = new;
+
     for i, notes in pairs(tbl["objects"]) do
         local ct = (notes.time/new.length);
         local nt = (tbl["objects"][i] ~= nil and tbl["objects"][i].time/new.length or 0);
         local td = (nt-ct)
 
-        local current = JSON.decode([[{
+        local current1 = JSON.decode([[{
             "time":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
@@ -88,7 +98,7 @@ if canUse then
             "transparency":0.25
             }]]);
         
-        local next = JSON.decode([[{
+        local next1 = JSON.decode([[{
             "time":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
@@ -96,15 +106,49 @@ if canUse then
             "transparency":0.25
             }]]);
 
-        current.time = ct;
-        current.position[1] = notes.position[1];
-        current.position[2] = notes.position[2];
-        next.time = ct+(td/2)/2; -- current + (timediff/2)/2
-        next.position[1] = notes.position[1];
-        next.position[2] = notes.position[2];
+        current1.time = ct;
+        current1.position[1] = notes.position[1];
+        current1.position[2] = notes.position[2];
+        next1.time = ct+(td/2)/2; -- current + (timediff/2)/2
+        next1.position[1] = notes.position[1];
+        next1.position[2] = notes.position[2];
         
-        table.insert(new.animation, current);
-        table.insert(new.animation, next);
+        table.insert(new.animation, current1);
+
+        if not (next1.time == td or next1.time == current1.time or next1.time == nt) and settings["AnimateToNext"] == true then
+            table.insert(new.animation, next1);
+        end
+        
+        if settings["ShowInside"] == true then
+            local current2 = JSON.decode([[{
+                "time":0,
+                "position":[0,0,1],
+                "rotation":[0,0,0],
+                "size":[0.425,0.425,0.425],
+                "transparency":0.5
+                }]]);
+            
+            local next2 = JSON.decode([[{
+                "time":0,
+                "position":[0,0,1],
+                "rotation":[0,0,0],
+                "size":[0.675,0.675,0.675],
+                "transparency":0.5
+                }]]);
+    
+            current2.time = ct;
+            current2.position[1] = notes.position[1];
+            current2.position[2] = notes.position[2];
+            next2.time = ct+(td/2)/2; -- current + (timediff/2)/2
+            next2.position[1] = notes.position[1];
+            next2.position[2] = notes.position[2];
+            
+            table.insert(new.animation, current1);
+    
+            if not (next2.time == td or next2.time == current2.time or next2.time == nt) and settings["AnimateToNext"] == true then
+                table.insert(new.animation, next2);
+            end
+        end
     end
 
     table.insert(tbl.objects, new)
