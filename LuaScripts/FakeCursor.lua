@@ -139,11 +139,11 @@ if canUse then
         
         table.insert(new.animation, current1);
 
-        if not (next1.time == td or next1.time == current1.time or next1.time == nt) and settings["AnimateToNext"] == true then
+        if not (next1.time == td or next1.time == current1.time or next1.time == nt) then --and settings["AnimateToNext"] == true then
             table.insert(new.animation, next1);
         end
         
-        if settings["ShowInside"] == true then
+        --if settings["ShowInside"] == true then
             local current2 = JSON.decode([[{
                 "time":0,
                 "position":[0,0,1],
@@ -169,10 +169,10 @@ if canUse then
             
             table.insert(obj.animation, current2);
     
-            if not (next2.time == td or next2.time == current2.time or next2.time == nt) and settings["AnimateToNext"] == true then
+            if not (next2.time == td or next2.time == current2.time or next2.time == nt) then --and settings["AnimateToNext"] == true then
                 table.insert(obj.animation, next2);
             end
-        end
+        --end
     end
 
     table.insert(tbl.objects, new)
