@@ -60,7 +60,7 @@ if canUse then
         "length":0,
         "position":[0,0,1],
         "rotation":[0,0,0],
-        "size":[0.675,0.675,0.775],
+        "size":[0.675,0.675,0.05],
         "transparency":0.25,
         "material":1,
         "appearance":0,
@@ -70,7 +70,7 @@ if canUse then
             "ease":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
-            "size":[0.675,0.675,0.775],
+            "size":[0.675,0.675,0.05],
             "transparency":0.5
         }, {
             "time":1,
@@ -157,7 +157,7 @@ if canUse then
                 "ease":0,
                 "position":[0,0,1],
                 "rotation":[0,0,0],
-                "size":[0.425,0.425,0.525],
+                "size":[0.425,0.425,0.05],
                 "transparency":0.5
                 }]]);
             
@@ -166,7 +166,7 @@ if canUse then
                 "ease":0,
                 "position":[0,0,1],
                 "rotation":[0,0,0],
-                "size":[0.675,0.675,0.775],
+                "size":[0.675,0.675,0.05],
                 "transparency":0.5
                 }]]);
     
