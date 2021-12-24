@@ -167,10 +167,10 @@ if canUse then
             next2.position[1] = notes.position[1];
             next2.position[2] = notes.position[2];
             
-            table.insert(new.animation, current1);
+            table.insert(obj.animation, current2);
     
             if not (next2.time == td or next2.time == current2.time or next2.time == nt) and settings["AnimateToNext"] == true then
-                table.insert(new.animation, next2);
+                table.insert(obj.animation, next2);
             end
         end
     end
