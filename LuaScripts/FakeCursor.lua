@@ -60,7 +60,7 @@ if canUse then
         "length":0,
         "position":[0,0,1],
         "rotation":[0,0,0],
-        "size":[0.675,0.675,0.05],
+        "size":[0.675,0.675,0.01],
         "transparency":0.25,
         "material":1,
         "appearance":0,
@@ -70,8 +70,8 @@ if canUse then
             "ease":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
-            "size":[0.675,0.675,0.05],
-            "transparency":0.5
+            "size":[0.675,0.675,0.01],
+            "transparency":0.8
         }, {
             "time":1,
             "ease":0,
@@ -157,8 +157,8 @@ if canUse then
                 "ease":0,
                 "position":[0,0,1],
                 "rotation":[0,0,0],
-                "size":[0.425,0.425,0.05],
-                "transparency":0.5
+                "size":[0.425,0.425,0.01],
+                "transparency":0.8
                 }]]);
             
             local next2 = JSON.decode([[{
@@ -166,8 +166,8 @@ if canUse then
                 "ease":0,
                 "position":[0,0,1],
                 "rotation":[0,0,0],
-                "size":[0.675,0.675,0.05],
-                "transparency":0.5
+                "size":[0.675,0.675,0.01],
+                "transparency":0.8
                 }]]);
     
             current2.time = ct;
