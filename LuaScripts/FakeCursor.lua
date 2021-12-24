@@ -123,8 +123,9 @@ if canUse then
     for i, notes in pairs(tbl["objects"]) do
         notes.fog = true;
 
-        local ct = (notes.time+offset/new.length);
-        local nt = (tbl["objects"][i] ~= nil and tbl["objects"][i].time/new.length or 0);
+        local ct = (notes.time+offset)/new.length;
+        --print(notes.time/new.length, ct)
+        local nt = (tbl["objects"][i] ~= nil and (tbl["objects"][i].time+offset)/new.length or 0);
         local td = (nt-ct)
         local tt = ct+(td/2);
 
