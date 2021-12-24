@@ -71,7 +71,7 @@ if canUse then
             "position":[0,0,1],
             "rotation":[0,0,0],
             "size":[0.675,0.675,0.775],
-            "transparency":0.25
+            "transparency":0.5
         }, {
             "time":1,
             "ease":0,
@@ -114,6 +114,8 @@ if canUse then
     new.length = length;
 
     for i, notes in pairs(tbl["objects"]) do
+        notes.fog = true;
+
         local ct = (notes.time/new.length);
         local nt = (tbl["objects"][i] ~= nil and tbl["objects"][i].time/new.length or 0);
         local td = (nt-ct)
