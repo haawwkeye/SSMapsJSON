@@ -62,7 +62,7 @@ if canUse then
         "rotation":[0,0,0],
         "size":[0.675,0.675,0.775],
         "transparency":0.25,
-        "material":2,
+        "material":1,
         "appearance":0,
         "color":[89, 89, 255],
         "animation":[{
@@ -90,7 +90,7 @@ if canUse then
         "rotation":[0,0,0],
         "size":[0.775,0.775,0.775],
         "transparency":0.25,
-        "material":2,
+        "material":1,
         "appearance":1,
         "color":[89, 89, 255],
         "animation":[{
