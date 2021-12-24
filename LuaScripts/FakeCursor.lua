@@ -67,12 +67,14 @@ if canUse then
         "color":[89, 89, 255],
         "animation":[{
             "time":0,
+            "ease":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
             "size":[0.675,0.675,0.775],
             "transparency":0.25
         }, {
             "time":1,
+            "ease":0,
             "position":[0,0,1],
             "rotation":[0,0,540],
             "size":[0,0,0],
@@ -93,12 +95,14 @@ if canUse then
         "color":[89, 89, 255],
         "animation":[{
             "time":0,
+            "ease":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
             "size":[0.775,0.775,0.775],
             "transparency":0.25
         }, {
             "time":1,
+            "ease":0,
             "position":[0,0,1],
             "rotation":[0,0,540],
             "size":[0,0,0],
@@ -116,6 +120,7 @@ if canUse then
 
         local current1 = JSON.decode([[{
             "time":0,
+            "ease":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
             "size":[0.525,0.525,0.525],
@@ -124,6 +129,7 @@ if canUse then
         
         local next1 = JSON.decode([[{
             "time":0,
+            "ease":0,
             "position":[0,0,1],
             "rotation":[0,0,0],
             "size":[0.775,0.775,0.775],
@@ -146,6 +152,7 @@ if canUse then
         --if settings["ShowInside"] == true then
             local current2 = JSON.decode([[{
                 "time":0,
+                "ease":0,
                 "position":[0,0,1],
                 "rotation":[0,0,0],
                 "size":[0.425,0.425,0.525],
@@ -154,6 +161,7 @@ if canUse then
             
             local next2 = JSON.decode([[{
                 "time":0,
+                "ease":0,
                 "position":[0,0,1],
                 "rotation":[0,0,0],
                 "size":[0.675,0.675,0.775],
@@ -176,6 +184,7 @@ if canUse then
     end
 
     table.insert(tbl.objects, new)
+    table.insert(tbl.objects, obj)
 
     local newData = JSON.encode(tbl);
 
