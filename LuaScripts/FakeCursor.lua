@@ -119,6 +119,7 @@ if canUse then
         local ct = (notes.time/new.length);
         local nt = (tbl["objects"][i] ~= nil and tbl["objects"][i].time/new.length or 0);
         local td = (nt-ct)
+        local tt = ct+(td/2);
 
         local current1 = JSON.decode([[{
             "time":0,
@@ -141,7 +142,7 @@ if canUse then
         current1.time = ct;
         current1.position[1] = notes.position[1];
         current1.position[2] = notes.position[2];
-        next1.time = ct+(td/2)/2; -- current + (timediff/2)/2
+        next1.time = tt; -- current + (timediff/2)
         next1.position[1] = notes.position[1];
         next1.position[2] = notes.position[2];
         
@@ -173,7 +174,7 @@ if canUse then
             current2.time = ct;
             current2.position[1] = notes.position[1];
             current2.position[2] = notes.position[2];
-            next2.time = ct+(td/2)/2; -- current + (timediff/2)/2
+            next2.time = tt; -- current + (timediff/2)
             next2.position[1] = notes.position[1];
             next2.position[2] = notes.position[2];
             
