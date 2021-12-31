@@ -146,13 +146,22 @@ if canUse then
             "size":[0.775,0.775,0.775],
             "transparency":0.25
             }]]);
+        
+        local pos = notes.position
+        
+        if settings["RandomPos"] then
+            pos = {
+                math.random(tonumber(tonumber(pos[1]) * (-1.75/2)),
+                    tonumber(tonumber(pos[1]) * (1.75/2))),
+                math.random(tonumber(tonumber(pos[2]) * (-1.75/2)),
+                    tonumber(tonumber(pos[2]) * (1.75/2)))
+            }
+        end
 
         current1.time = ct;
-        current1.position[1] = notes.position[1];
-        current1.position[2] = notes.position[2];
+        current1.position = pos;
         next1.time = tt; -- current + (timediff/2)
-        next1.position[1] = notes.position[1];
-        next1.position[2] = notes.position[2];
+        next1.position = pos;
         
         table.insert(new.animation, current1);
 
@@ -180,11 +189,9 @@ if canUse then
                 }]]);
     
             current2.time = ct;
-            current2.position[1] = notes.position[1];
-            current2.position[2] = notes.position[2];
+            current2.position = pos;
             next2.time = tt; -- current + (timediff/2)
-            next2.position[1] = notes.position[1];
-            next2.position[2] = notes.position[2];
+            next2.position = pos;
             
             table.insert(obj.animation, current2);
     
